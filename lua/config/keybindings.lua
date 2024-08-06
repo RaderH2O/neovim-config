@@ -1,7 +1,3 @@
--- local vim = vim
-
-vim.g.mapleader = " "
-
 -- Insert mode keybindings
 vim.keymap.set("i", "jk", "<esc>")
 vim.keymap.set("i", "<esc>", "<nop>")

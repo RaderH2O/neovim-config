@@ -1,40 +1,70 @@
--- local vim = vim
-local Plug = vim.fn['plug#']
 
-vim.call('plug#begin')
+return require('packer').startup(function(use)
 
--- List your plugins here
-Plug('tomasiser/vim-code-dark')
+    use 'wbthomason/packer.nvim'
 
--- Nerdtree
-Plug('preservim/nerdtree')
+    use 'tomasiser/vim-code-dark'
 
--- vim airline
--- Plug 'vim-airline/vim-airline'
+    use 'preservim/nerdtree'
 
--- lightline
-Plug('itchyny/lightline.vim')
+    use 'itchyny/lightline.vim'
 
--- catppuccin theme
-Plug('catppuccin/vim' , { ['as'] = 'catppuccin' })
+    use {
+        'catppuccin/vim',
+        as = 'catppuccin'
+    }
 
--- battery.vim
-Plug('lambdalisue/battery.vim')
+    use 'lambdalisue/battery.vim'
 
--- vim-terminal
-Plug('tc50cal/vim-terminal')
+    use 'tc50cal/vim-terminal'
 
--- supertab (autocomplete)
-Plug('ervandew/supertab')
+    use 'ervandew/supertab'
 
--- discord presence
-Plug('andweeb/presence.nvim')
+    use 'andweeb/presence.nvim'
 
--- v(m fugitive (git support)
-Plug('tpope/vim-fugitive')
+    use 'tpope/vim-fugitive'
 
--- vim auto commenting
-Plug('KarimElghamry/vim-auto-comment')
+    use 'terrortylor/nvim-comment'
 
-vim.call('plug#end')
+    use 'VidocqH/auto-indent.nvim'
 
+end)
+
+-- local Plug = vim.fn['plug#']
+
+-- vim.call('plug#begin')
+
+-- -- List your plugins here
+-- Plug('tomasiser/vim-code-dark')
+
+-- -- Nerdtree
+-- Plug('preservim/nerdtree')
+
+-- -- vim airline
+-- -- Plug 'vim-airline/vim-airline'
+
+-- -- lightline
+-- Plug('itchyny/lightline.vim')
+
+-- -- catppuccin theme
+-- Plug('catppuccin/vim' , { ['as'] = 'catppuccin' })
+
+-- -- battery.vim
+-- Plug('lambdalisue/battery.vim')
+
+-- -- vim-terminal
+-- Plug('tc50cal/vim-terminal')
+
+-- -- supertab (autocomplete)
+-- Plug('ervandew/supertab')
+
+-- -- discord presence
+-- Plug('andweeb/presence.nvim')
+
+-- -- v(m fugitive (git support)
+-- Plug('tpope/vim-fugitive')
+
+-- -- vim auto commenting
+-- Plug('terrortylor/nvim-comment')
+
+-- vim.call('plug#end')
