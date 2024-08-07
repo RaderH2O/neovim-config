@@ -1,34 +1,16 @@
 
-return require('packer').startup(function(use)
+-- Loading plugin configurations
+require("plugins.nvim_snippy")
+require("plugins.lightline")
+require("plugins.nerdtree")
+require("plugins.nvim_comment")
 
-    use 'wbthomason/packer.nvim'
 
-    use 'tomasiser/vim-code-dark'
+require("plugins.nvim_cmp")
+-- LSP
+require("plugins.mason_nvim")
+require("plugins.nvim_lspconfig")
 
-    use 'preservim/nerdtree'
-
-    use 'itchyny/lightline.vim'
-
-    use {
-        'catppuccin/vim',
-        as = 'catppuccin'
-    }
-
-    use 'lambdalisue/battery.vim'
-
-    use 'tc50cal/vim-terminal'
-
-    use 'ervandew/supertab'
-
-    use 'andweeb/presence.nvim'
-
-    use 'tpope/vim-fugitive'
-
-    use 'terrortylor/nvim-comment'
-
-    use 'VidocqH/auto-indent.nvim'
-
-end)
 
 -- local Plug = vim.fn['plug#']
 
