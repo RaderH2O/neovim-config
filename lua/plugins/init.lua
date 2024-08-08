@@ -1,9 +1,9 @@
 
 -- Loading plugin configurations
-require("plugins.nvim_snippy")
 require("plugins.lightline")
 require("plugins.nerdtree")
 require("plugins.nvim_comment")
+require("plugins.nvim_snippy")
 
 
 require("plugins.nvim_cmp")
