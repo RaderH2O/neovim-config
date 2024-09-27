@@ -19,5 +19,5 @@ vim.keymap.set("n", "<leader>sv", ":source $MYVIMRC<CR>")
 
 -- Normal mode
 vim.keymap.set("n", "<leader>bb", ":bN<CR>")
-vim.keymap.set("n", "<leader><leader>", ":NERDTree<CR><Esc><C-w><C-l>:split | resize 7 | term<CR><C-w><C-k>")
+vim.keymap.set("n", "<leader><leader>", ":NERDTree<CR><Esc><C-w><C-l>:split | resize 7 | term pwsh.exe<CR><C-w><C-k>")
 
