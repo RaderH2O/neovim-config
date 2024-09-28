@@ -1,15 +1,20 @@
 
 -- Loading plugin configurations
-require("plugins.lightline")
-require("plugins.nerdtree")
-require("plugins.nvim_comment")
-require("plugins.nvim_snippy")
+
+-- require("plugins.lightline")
+-- require("plugins.nerdtree")
+-- require("plugins.nvim_comment")
+-- require("plugins.nvim_snippy")
+
+-- require("plugins.telescope_nvim")
 
 
-require("plugins.nvim_cmp")
--- LSP
-require("plugins.mason_nvim")
-require("plugins.nvim_lspconfig")
+-- require("plugins.nvim_cmp")
+-- -- LSP
+-- require("plugins.mason_nvim")
+-- require("plugins.nvim_lspconfig")
+
+
 
 
 -- local Plug = vim.fn['plug#']
