@@ -103,7 +103,17 @@ local plugins = {
 	'Bilal2453/luvit-meta',
 	'm4xshen/autoclose.nvim',
 	'lewis6991/gitsigns.nvim',
-	'andweeb/presence.nvim',
+	{
+		'vyfor/cord.nvim',
+		build = './build || .\\build',
+		event = 'VeryLazy',
+		opts = {}, -- calls require('cord').setup()
+	},
+	{
+		'alec-gibson/nvim-tetris',
+		event = 'VeryLazy'
+	}
+
 }
 
 

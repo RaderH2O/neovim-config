@@ -145,9 +145,9 @@ require("config.nvim_tree")
 require("config.mini_map")
 require("config.luasnip")
 require("config.toggleterm_nvim")
+require("config.cord_nvim")
 
 
-require("presence").setup()
 require("lualine").setup()
 require("autoclose").setup()
 require("gitsigns").setup()
