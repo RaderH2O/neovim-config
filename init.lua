@@ -142,6 +142,7 @@ require("config.nvim_treesitter")
 require("config.nvim_tree")
 require("config.mini_map")
 require("config.luasnip")
+require("config.toggleterm_nvim")
 
 
 require("lualine").setup()
