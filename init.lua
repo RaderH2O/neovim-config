@@ -84,6 +84,8 @@ vim.keymap.set('i', 'jk', '<Esc>')
 -- Set <space>p and <space>y to copy/paste from clipboard
 vim.keymap.set('n', '<space>y', '"+y', { desc = 'Copy to clipboard' })
 vim.keymap.set('n', '<space>p', '"+p', { desc = 'Paste from clipboard' })
+vim.keymap.set('v', '<space>y', '"+y', { desc = 'Copy to clipboard' })
+vim.keymap.set('v', '<space>p', '"+p', { desc = 'Paste from clipboard' })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
