@@ -147,6 +147,7 @@ require("config.luasnip")
 require("config.toggleterm_nvim")
 
 
+require("presence").setup()
 require("lualine").setup()
 require("autoclose").setup()
 require("gitsigns").setup()

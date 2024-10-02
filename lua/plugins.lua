@@ -31,7 +31,7 @@ local plugins = {
 	-- LSP
 	'williamboman/mason.nvim',
 	'williamboman/mason-lspconfig.nvim',
-	'neovim/nvim-lspconfig',
+	{ 'neovim/nvim-lspconfig',   commit = '38cd54b' },
 
 	-- Autocomplete
 	'neovim/nvim-lspconfig',
@@ -95,7 +95,7 @@ local plugins = {
 		dependencies = { 'nvim-tree/nvim-web-devicons' }
 	},
 
-	{ 'akinsho/toggleterm.nvim', version = "*", config = true },
+	{ 'akinsho/toggleterm.nvim', version = "*",     config = true },
 
 	'nvim-tree/nvim-tree.lua',
 	-- 'echasnovski/mini.map',
@@ -103,6 +103,7 @@ local plugins = {
 	'Bilal2453/luvit-meta',
 	'm4xshen/autoclose.nvim',
 	'lewis6991/gitsigns.nvim',
+	'andweeb/presence.nvim',
 }
 
 
