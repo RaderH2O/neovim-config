@@ -145,3 +145,5 @@ require("config.luasnip")
 
 
 require("lualine").setup()
+require("autoclose").setup()
+require("gitsigns").setup()

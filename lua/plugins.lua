@@ -84,6 +84,9 @@ local plugins = {
 	'nvim-tree/nvim-tree.lua',
 	-- 'echasnovski/mini.map',
 	'echasnovski/mini.starter',
+	'Bilal2453/luvit-meta',
+	'm4xshen/autoclose.nvim',
+	'lewis6991/gitsigns.nvim',
 }
 
 
