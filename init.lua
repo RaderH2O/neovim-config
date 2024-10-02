@@ -82,8 +82,8 @@ vim.cmd("set shiftwidth=4")
 vim.keymap.set('i', 'jk', '<Esc>')
 
 -- Set <space>p and <space>y to copy/paste from clipboard
-vim.keymap.set('n', '<space>y', '"+y')
-vim.keymap.set('n', '<space>p', '"+p')
+vim.keymap.set('n', '<space>y', '"+y', { desc = 'Copy to clipboard' })
+vim.keymap.set('n', '<space>p', '"+p', { desc = 'Paste from clipboard' })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
@@ -99,6 +99,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+vim.keymap.set('t', 'jk', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- TIP: Disable arrow keys in normal mode
 -- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
@@ -138,8 +139,9 @@ require("config.nvim_lspconfig")
 require("config.conform_nvim")
 require("config.telescope_nvim")
 require("config.nvim_treesitter")
-require("config.vim_vsnip")
 require("config.nvim_tree")
+require("config.mini_map")
+require("config.luasnip")
 
 
 require("lualine").setup()

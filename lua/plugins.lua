@@ -26,8 +26,11 @@ local plugins = {
 	'hrsh7th/nvim-cmp',
 
 	-- For vsnip users.
-	'hrsh7th/cmp-vsnip',
-	'hrsh7th/vim-vsnip',
+	-- 'hrsh7th/cmp-vsnip',
+	-- 'hrsh7th/vim-vsnip',
+
+	'L3MON4D3/LuaSnip',
+	'saadparwaiz1/cmp_luasnip',
 
 	-- autoformatting
 	'stevearc/conform.nvim',
@@ -79,6 +82,9 @@ local plugins = {
 	{ 'akinsho/toggleterm.nvim', version = "*", config = true },
 
 	'nvim-tree/nvim-tree.lua',
+	-- 'echasnovski/mini.map',
+	'echasnovski/mini.starter',
 }
+
 
 return plugins
