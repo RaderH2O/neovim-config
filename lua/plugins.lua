@@ -60,6 +60,8 @@ local plugins = {
 
 	{
 		'nvim-treesitter/nvim-treesitter',
+		version = "*",
+		opts = {},
 	},
 
 	{
@@ -92,17 +94,23 @@ local plugins = {
 
 	{
 		'nvim-lualine/lualine.nvim',
-		dependencies = { 'nvim-tree/nvim-web-devicons' }
+		dependencies = { 'nvim-tree/nvim-web-devicons' },
+		opts = {}
 	},
 
 	{ 'akinsho/toggleterm.nvim', version = "*",     config = true },
 
 	'nvim-tree/nvim-tree.lua',
-	-- 'echasnovski/mini.map',
 	'echasnovski/mini.starter',
-	'Bilal2453/luvit-meta',
-	'm4xshen/autoclose.nvim',
-	'lewis6991/gitsigns.nvim',
+	-- 'Bilal2453/luvit-meta',
+	{
+		'm4xshen/autoclose.nvim',
+		opts = {},
+	},
+	{
+		'lewis6991/gitsigns.nvim',
+		opts = {},
+	},
 	{
 		'vyfor/cord.nvim',
 		build = './build || .\\build',
