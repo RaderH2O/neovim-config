@@ -1,1 +1,1 @@
-vim.keymap.set('n', '<C-`>', '<cmd>ToggleTerm<CR>')
+vim.keymap.set('n', '<leader>,', '<cmd>ToggleTerm<CR>')
